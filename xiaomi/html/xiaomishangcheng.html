@@ -1,0 +1,1910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>小米商城</title>
+	<link rel="stylesheet" href="reset.css">
+	<style>
+	 #header{
+	 	width: 1263px;
+	 	height: 40px;
+	 	background-color: #333;
+	 	margin: auto;
+	 }
+	 #lheader{
+	 	width:650px;
+	 	height:15px;
+	 	margin-left: 11px;
+	 	/*background-color: red;*/
+	 	padding-top: 14px;
+	 	float: left;
+	 }
+     .headertxt{
+      	width: 67px;
+	 	height: 13px;
+	 	font-size: 11px;
+	 	line-height: 15px;
+	 	color: #b0b0b0;
+	 	float: left;
+	 	text-align: center;
+	 	border-right: 1px solid #424242;
+	 }
+	.headertxt1{
+      	width: 78px;
+	 	height: 13px;
+	 	font-size: 11px;
+	 	line-height: 15px;
+	 	color: #b0b0b0;
+	 	float: left;
+	 	text-align: center;
+	 	border-right: 1px solid #424242;
+	 }
+
+	 .headertxt:hover{
+	 	color: #fff;
+	 }
+	 .headertxt1:hover{
+	 	color: #fff;
+	 }
+	 #headerright{
+	 	width: 76px;
+	 	height: 27px;
+	 	float: left;
+	 	margin-left:380px;
+	 	margin-top: 13px;
+	 	background: url(../img/jiange.png) no-repeat 26px 2px;
+	 }
+	 #denglu{
+	 	width: 64px;
+	 	height: 12px;
+	 	float: left;
+
+	 }
+	 .lu{
+	 	font-size: 12px;
+	 	line-height: 14px;
+	 	color: #b0b0b0;
+	 	float: left;
+	 	margin-right: 3px;
+	 }
+	 #xiaoguo{
+	 	float: left;
+	 	width: 121px;
+	 	height: 40px;
+	 	position: relative;
+	 }
+	 #gouwuche{
+	 	float: left;
+	 	transition: 0.4s;
+	 }
+	 #xiaoguo1{
+	 	width: 220px;
+	 	height: 75px;
+	 	background-color: #fff;
+	 	position: absolute;
+	 	top: 40px;
+	 	right: 0px;
+	 	text-align: center;
+	 	border: 1px solid #434343;
+	 	display: none;
+	 	float: right;
+	 	z-index: 999;
+	 }
+	 #jixuxuangou{
+	 	font-size: 11px;
+	 	line-height: 75px;
+	 	color: #000;
+
+	 }
+	 #xiaoguo:hover #xiaoguo1{
+	 	display: block;
+	 }
+	 #er{
+	 	position: relative;
+	 }
+	 #erweima{
+	 	   width: 125px;
+         	height: 150px;
+         	display: none; 
+         	position: absolute;
+            left: 390px;
+            top: 25px;
+         	border: 1px solid #dbdbdb;
+         	background-color: #fff;
+         	z-index: 999;
+	 }
+	 #erweima2{
+	 	     position: absolute;
+	 	     left:50px;
+	 	     top: -15px;
+	 }
+	 #erweima3{
+	 	    margin-left: 20px;
+         	padding-top: 19px;
+         	margin-bottom: 13px;
+	 }
+	 #er:hover #erweima{
+	 	display: block;
+	 }
+	 #app{
+	 	font-size: 12px;
+	 	text-align: center;
+	 }
+
+	 #search{
+	 	height: 100px;
+	 	width: 1263px;
+	 	margin: 0 auto;
+	 	/*background-color: pink;*/
+	 }
+	 #chatu{
+	 	width: 235px;
+	 	height: 77px;
+	 	margin-left: 20px;
+	 	padding-top: 23px;
+	 	float: left;
+	 }
+	 #daohang{
+	 	width: 686px;
+	 	height: 100px;
+	 	/*background-color: yellow;*/
+	 	float: left;
+	 }
+	 #daohang2{
+	 	width: 664px;
+	 	height: 17px;
+	 	/*background-color: blue;*/
+	 	margin-left: 14px;
+	 	margin-top: 45px;
+	 }
+	 .txt1{
+	 	width: 65px;
+	 	height: 17px;
+	 	line-height: 17px;
+	 	text-align: center;
+	 	font-size: 17px;
+	 	color: #333333;
+	 	margin-right: 30px;
+	 }
+	 .txt2{
+	 	width: 30px;
+	 	height: 17px;
+	 	line-height: 17px;
+	 	text-align: center;
+	 	font-size: 17px;
+	 	color: #333333;
+	 	margin-right: 30px;
+	 }
+	 .txt3{
+	 	width: 46px;
+	 	height: 17px;
+	 	line-height: 17px;
+	 	text-align: center;
+	 	font-size: 17px;
+	 	color: #333333;
+	 	margin-right: 30px;
+	 }
+	 .txt4{
+	 	width: 74px;
+	 	height: 17px;
+	 	line-height: 17px;
+	 	text-align: center;
+	 	font-size: 17px;
+	 	color: #333333;
+	 	margin-right: 30px;
+	 }
+	 .txt5{
+	 	width:30px;
+	 	height: 17px;
+	 	line-height: 17px;
+	 	text-align: center;
+	 	font-size: 17px;
+	 	color: #333333;
+	 }
+	 #sousuokuang{
+	 	width: 298px;
+	 	height: 51px;
+	 	float: left;
+	    margin-top: 24px;
+	    position: relative;
+	 }
+	 #waibiankuang{
+	 	
+	 }
+	 #input1{
+	 	width: 245px;
+	 	height: 49px;
+	 	border-top:  1px solid #434343;
+	 	border-left: 1px solid #434343;
+	 	border-bottom:  1px solid #434343;
+	 	float:left;
+	 	border-right: none;
+	 	
+	 }
+	 #input2{
+	 	width: 47px;
+	 	height: 49px;
+	 	border-top:  1px solid #434343;
+	 	border-right: 1px solid #434343;
+	 	border-bottom:  1px solid #434343;
+	 	border-left: none;
+	 	float: left;
+	 }
+	 #shouhuan1{
+	 	font-size: 12px;
+	 	color: #757575;
+	 	line-height: 18px;
+	 	background-color: #eeeeee;
+	 	width: 36px;
+	 	position: absolute;
+	 	right: 133px;
+	 	top: 16px;
+	 }
+	  #shouhuan2{
+	 	font-size: 12px;
+	 	color: #757575;
+	 	line-height: 18px;
+	 	background-color: #eeeeee;
+	 	width: 65px;
+	 	position: absolute;
+	 	right:61px;
+	 	top:16px;
+	 }
+	 #sousuotu{
+	 	position: absolute;
+	 	right: 17px;
+	 	top: 16px;
+	 }
+	 #sec{
+	 	width: 1263px;
+	 	height: 462px;
+	 	margin: 0 auto;
+	 	position: relative;
+	 }
+	 #banner{
+	 	width: 1223px;
+	 	height: 462px;
+	 	background-color: #ffc907;
+	 	margin-left: 20px;
+	 }
+	  #Lbanner{
+	 	width: 230px;
+	 	height: 462px;
+	 	background-color: rgba(0,0,0,0.6);
+	 	float: left;
+	 }
+	 #Rbanner{
+	 	width: 993px;
+	 	height: 462px;
+	 	float: right;
+	 }
+	 #por2{
+	 	width:100%;
+	 	height: 100%;
+	 	float: left;
+	 }
+	 #yuandian{
+	 	width: 80px;
+	 	height: 9px;
+	 	position: absolute;
+	 	right: 40px;
+	 	bottom: 24px;
+	 }
+	 .dian{
+	 	width: 9px;
+	 	height: 9px;
+	 	border:2px solid #eaeaea;
+	 	border-radius: 50%;
+	 	float: left;
+	 	margin-right: 3px;
+	 }
+	 .dian:hover{
+	 	background-color: #996d00;
+	 }
+	 #zuo{
+	 	    width: 40px;
+			height: 69px;
+			background: url(../img/slide.png) no-repeat 0px 0px;
+			display: block;
+			position: absolute;
+			left: 250px;
+			top: 217px;
+	 }
+	 #you{
+	 	 width: 40px;
+			height: 69px;
+			background: url(../img/slide.png) no-repeat -43px 0px;
+			display: block;
+			position: absolute;
+			right: 20px;
+			top: 217px;
+	 }
+	 #zuo:hover{
+	 	background-position: -85px 0px;
+	 }
+	 #you:hover{
+	 	background-position: -128px 0px;
+	 }
+	 
+	 .shangpinfenlei{
+	 	height: 31px;
+	 	font-size:15px;
+	 	line-height: 31px;
+	 	color: #fff;
+	 	display: block;
+	 	margin-bottom: 9px;
+	 	padding-left: 27px;
+	 }
+	#spfl2{
+		margin-top: 33px;
+	}
+	 .splm{
+	 	margin-bottom: none;
+	 }
+	 .shangpinfenlei:hover{
+	 	background-color: #ff6700;
+	 }
+	 .youjiao{
+	 	float: right;
+	 	margin-right: 23px;
+	 }
+	 #sec2{
+	 	margin: 0 auto;
+	 	height: 170px;
+	 	width: 1263px;
+	 	margin-bottom: 42px;
+	 }
+	 #seckuang{
+	 	width: 1227px;
+	 	height: 170px;
+	 	/*background-color: orange;*/
+	 	margin-left: 20px;
+	 }
+	 .por4{
+	 	width: 230px;
+	 	height: 170px;
+	 	float: left;
+	 	background-color:#5f5750;
+	 	margin-right: 16px;
+	 }
+     .por5{
+     	width: 316px;
+     	height: 170px;
+     	margin-right: 15px;
+     	float: left;
+     }
+     .por6{
+     	width: 316px;
+     	height: 170px;
+     	float: left;
+     }
+     #kuang3{
+     	width: 316px;
+     	height: 153px;
+     	margin: 9px 8px 9px 10px;     
+}
+     .q1{
+     	width:50px;
+     	height: 50px;
+     	border-bottom: 1px solid #665e57;
+     	float: left;
+     }
+     .q2{
+     	width:50px;
+     	height: 50px;
+     	border-bottom: 1px solid #665e57;
+     	border-left: 1px solid #665e57;
+     	border-right: 1px solid #665e57;
+     	float: left;
+     	margin-left: 28px;
+     	margin-right: 28px;
+     }
+     .q3{
+     	width:50px;
+     	height: 50px;
+     	border-bottom: 1px solid #665e57;
+     	float: left;
+     }
+     .kuang2{
+     	height: 76px;
+     	width: 316px;
+     	margin-bottom:25px;
+     }
+     #mingxingdanpin{
+     	width: 1263px;
+     	height: 421px;
+     	margin: 0 auto;
+     }
+     #mingxing{
+     	width: 1227px;
+     	height: 40px;
+        margin-left: 20px;
+        /*background-color: red;*/
+        font-size: 22px;
+        color: #000;
+    }
+    #baizuoyou{
+    	width: 75px;
+    	height: 17px;
+    	float: right;
+    	padding-top: 7px;
+    }
+    #xiaomi{
+    	float: left;
+    }
+    .danpin{
+    	width: 234px;
+    	height: 337px;
+    	margin-right: 15px;
+    	background-color: #fafafa;
+    	float: left;
+    	border-top: 1px solid #ffac13;
+    	position: relative;
+    	transition: 0.3s;
+    }
+    .danpin1{
+    	width: 231px;
+    	height: 337px;
+    	background-color: #fafafa;
+    	position: relative;
+    	float: left;
+    	transition: 0.3s;
+    	border-top: 1px solid #00c0a5;
+    }
+    #xiaomi2{
+    	width: 1229px;
+    	height: 381px;
+    	margin-left: 20px;
+    }
+    #jinghuaqi{
+    	font-size: 12px;
+    	line-height: 12px;
+    	color: #212121;
+    	text-align: center;
+    	margin-bottom: 12px;
+    }
+	#xingneng{
+		font-size: 11px;
+		line-height: 11px;
+		color: #b0b0b0;
+		text-align: center;
+		margin-bottom: 21px;
+	}
+	#jiaqian{
+		font-size: 12px;
+		line-height: 12px;
+		color: #ff6709;
+		text-align: center;
+	}
+	.danpin:hover{
+		top: -3px;
+	}
+	.danpin1:hover{
+		top: -3px;
+	}
+	#seczhineng{
+		width: 1263px;
+		background-color: #f5f5f5;
+		margin: 0 auto;
+	}
+	#zn1{
+		width: 100%;
+		height: 119px;
+	}
+	#zn{
+		font-size: 19px;
+		color: #333333;
+		line-height: 19px;
+		margin-top: 80px;
+		float: left;
+		margin-left: 20px;
+	}
+	#ck{
+		font-size: 14px;
+		line-height: 14px;
+		color: #424242;
+		margin-right: 18px;
+		float: right;
+		margin-top: 80px;
+	}
+	#zhinengsec{
+		height: 615px;
+		/*background-color:red;*/
+	}
+	#znsecl{
+		width: 235px;
+		height: 614px;
+		float: left;
+		margin-left: 20px;
+	}
+	#cheng{
+		width: 1008px;
+		height: 301px;
+		float: right;
+		/*background-color: pink;*/
+		margin-bottom: 12px;
+		overflow: hidden;
+	}
+	.cheng1{
+		width: 234px;
+		height: 300px;
+		background-color: #fff;
+		margin-left: 15px;
+		float: left;
+		overflow: hidden;
+		position: relative;
+	}
+	#xiahuaxiaoguo{
+		width: 234px;
+		height: 80px;
+		background-color: rgba(255,182,0,1);
+		position: absolute;
+		bottom: -80px;
+		left: 0px;
+		transition: 0.5s;
+		z-index: 999;
+		color: #fff;
+		text-align: center;
+	}
+	.cheng1:hover #xiahuaxiaoguo{
+		bottom: 0px;
+	}
+	#dapei{
+		width: 100%;
+		height: 79px;
+		/*background-color: pink;*/
+	}
+	#da{ 
+		width: 46px;
+		font-size: 19px;
+		line-height: 19px;
+		color: #333333;
+		padding-top: 39px;
+		margin-left: 20px;
+		float: left;
+
+	}
+	#pei{
+		margin-top: 43px;
+		height:22px; 
+		/*width: 31px;*/
+		float: right;
+	}
+	.remen{
+		font-size: 16px;
+		line-height: 21px;
+		text-align: center;
+		float:left;
+		margin-right: 31px;
+		color: #424242;
+	}
+	.remen:hover{
+		color: orange;
+		border-bottom:  1px solid orange;
+	}
+	.dapeisec{
+		width: 1243px;
+		height: 301px;
+		margin-left: 20px;
+		margin-bottom: 17px;
+
+	}
+	.secdapei1{
+		width: 234px;
+    	height: 301px;
+    	background-color: #fafafa;
+    	float: left;
+    	position: relative;
+    	transition: 0.3s;
+    	overflow: hidden;
+	}
+	.secdapei{
+		
+    	width: 234px;
+    	height: 301px;
+    	margin-right: 15px;
+    	background-color: #fafafa;
+    	float: left;
+    	position: relative;
+    	transition: 0.3s;
+    	overflow: hidden;
+    }
+	#xingneng{
+		font-size: 11px;
+		line-height: 11px;
+		color: #b0b0b0;
+		text-align: center;
+		margin-bottom: 21px;
+	}
+	#jiaqian{
+		font-size: 12px;
+		line-height: 12px;
+		color: #ff6709;
+		text-align: center;
+	}
+	.xiaoguo3{
+		width: 234px;
+        height: 80px;
+        background-color: orange;
+        position: absolute;
+        bottom: -80px;
+        left: 0px;
+	}
+	.secdapei:hover .xiaoguo3{
+		bottom: 0px;
+	}
+	.secdapei1:hover .xiaoguo3{
+		bottom: 0px;
+	}
+	#tuijian{
+		height: 344px;
+		/*background-color: blue;*/
+		margin-top: 36px;
+
+	}
+	#wn{
+		height: 25px;
+	}
+	#weini{
+		height: 25px;
+		margin-left: 20px;
+		font-size: 21px;
+		line-height: 25px;
+		float: left;
+		color:#333333; 
+	}
+	#tuiyou{
+		width: 75px;
+		height: 25px;
+		float: right;
+		margin-right: 20px;
+		margin-top: 3px;
+	}
+	#yidong{
+		width: 1243px;
+		height: 300px;
+		margin-left: 20px;
+		/*background-color: pink;*/
+	}
+	.jian{
+		width: 235px;
+		height: 300px;
+		float: left;
+		margin-right: 12px;
+		position: relative;
+		transition: 0.3s;
+		background-color: #fff;
+
+	}
+	.jian:hover{
+		top: -1px;
+	}
+	.pinming{
+		text-align: center;
+		font-size: 12px;
+		height: 12px;
+		color: #333333;
+		margin-top: 26px;
+	}
+	.jiazhi{
+		text-align: center;
+		font-size: 13px;
+		margin-top: 16px;
+		line-height: 13px;
+		color: #ff6700;
+	}
+	.xiaoliang{
+		font-size: 12px;
+		margin-top: 20px;
+		line-height: 12px;
+		color: #757575;
+		text-align: center;
+	}
+	.shouhuan{
+		text-align: center;
+	}
+	#reping{
+		width: 1243px;
+		height: 424px;
+		margin-top: 39px;
+		margin-left: 20px;
+		/*background-color: pink;*/
+	}
+	#rp{
+		font-size: 23px;
+		line-height: 23px;
+		color: #333333;
+	}
+	.yinxiang{
+		width: 1243px;
+		height: 380px;
+		margin-top:20px;
+		/*background: red;*/ 
+	}
+	.yx{
+		width: 296px;
+		height: 380px;
+		line-height: 380px;
+		margin-right: 12px;
+		background-color: #fff;
+		float: left;
+		position: relative;
+		top: 0px;
+		transition: 0.3s;
+	}
+	.yx:hover{
+		top: -3px;
+	}
+	.mlyx{
+		width: 296px;
+		height: 220px;
+	}
+	.yx1{
+		width: 225px;
+		font-size: 13px;
+		line-height: 15px;
+		color: #333333;
+		margin-left: 30px;
+		margin-right: 40px;
+		margin-top: 31px;
+	}
+	.yxpj{
+		font-size: 10px;
+		line-height: 10px;
+		margin-left: 30px;
+		color: #b0b0b0;
+		margin-top: 12px;
+	}
+	.yxjj{
+		width: 160px;
+		height: 12px;
+		margin-left: 30px;
+		margin-top: 21px;
+	}
+	.yxmc{
+		font-size: 12px;
+		line-height: 12px;
+		width: 108px;
+		color: #333333;
+		border-right: 1px solid #e0e0e0;
+		display: block;
+		float: left;
+	}
+	.yxjq{
+		font-size: 12px;
+		line-height: 12px;
+		text-align: center;
+		width: 50px;
+		color: #ff6700;
+		display: block;
+		float: left;
+
+	}
+	.neirongkuang{
+		width: 1243px;
+		height: 380px;
+		margin-top:20px;
+	}
+	.neirong{
+		width: 296px;
+		height: 380px;
+		line-height: 380px;
+		margin-right: 12px;
+		background-color: #fff;
+		float: left;
+		border-top:1px solid #ffac13; 
+		position: relative;
+		top: 0px;
+		transition: 0.3s;
+	}
+	.neirong:hover{
+		top: -3px;
+	}
+	#tushu{
+		font-size: 14px;
+		line-height: 14px;
+		color: #ffac13;
+		text-align: center;
+		margin-top:30px;
+
+	}
+	.shuming{
+		font-size: 20px;
+		line-height: 20px;
+		color: #333333;
+		margin-top: 20px;
+		display: block;
+		text-align: center;
+	}
+	.shangxian{
+		font-size: 12px;
+		line-height: 21px;
+		color: #b0b0b0;
+		display: block;
+		margin: 5px 55px 16px 55px;
+	}
+	.money{
+		font-size: 12px;
+		line-height: 12px;
+		color: #333333;
+		display: block;
+		text-align: center;
+	}
+	.caochatu{
+		width: 216px;
+		height: 154px;
+		display: block;
+		margin-left: 40px;
+	}
+	.tsdian{
+		width: 100px;
+		height: 10px;
+		position: absolute;
+		bottom: 24px;
+		left: 110px;
+	}
+	.tushudian{
+		display: block;
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+		margin-right: 13px;
+		float: left;
+		border:2px solid #b0b0b0;
+		background-color: 	#b0b0b0;
+	}
+	.tushudian:hover{
+		border:2px solid #ff6700;
+		background-color: transparent; 
+	}
+	#shipin{
+		width: 1243px;
+		height: 324px;
+		margin-top: 39px;
+		margin-left: 20px;
+		margin-bottom: 20px;
+		/*background-color: pink;*/
+	}
+	#shi{
+		font-size: 23px;
+		line-height: 23px;
+		color: #333333;
+	}
+	.shipinkuang{
+		width: 1243px;
+		height: 285px;
+		margin-top:20px
+		/*background-color: blue;*/
+	}
+	.ship{
+		width: 296px;
+		height: 285px;
+		margin-right: 12px;
+		background-color: #fff;
+		float: left;
+		position: relative;
+		top: 0px;
+		transition: 0.3s;
+	}
+	.ship:hover{
+		top: -3px;
+	}
+    .sp{
+    	width: 296px;
+    	height: 180px;
+    }
+    .fabuhui{
+    	font-size: 13px;
+    	line-height: 13px;
+    	color: #333333;
+    	margin-top: 32px;
+    	text-align: center;
+    	margin-bottom: 15px; 
+
+    }
+    .shenqinggaobai{
+    	font-size: 12px;
+    	line-height: 13px;
+    	color: #b0b0b0;
+    	text-align: center;
+    }
+    #weixiu{
+    	width: 1223px;
+    	height: 78px;
+    	background-color: #fff;
+    	margin-left: 20px;
+    	margin-right: 20px;
+
+
+    }
+    #weixiu2{
+    	width: 1223px;
+    	height: 78px;
+    	margin-left: 20px;
+
+    	/*background-color: pink;*/
+    }
+    .weixiu3{
+    	width: 243px;
+    	height: 77px;
+    	float: left;
+    }
+    #bangzhu{
+    	width: 1463px;
+    	height: 158px;
+
+    }
+    #bangzhu1{
+    	width: 1223px;
+    	height: 158px;
+    	margin-left: 20px;
+    	background-color: #fff;
+    	
+    }
+    #bangzhu2{
+        width: 962px;
+        height:114px;
+        margin-left: 20px;
+        border-right: 1px solid #e0e0e0;
+        
+        margin-top: 38px;
+        float: left;
+    }
+    .bangzhu3{
+    	margin-right: 110px;
+    	width: 58px;
+    	height: 114px;
+    	float: left; 
+    	
+    }
+    .bangzhu4{
+    	font-size: 12px;
+    	color:#424242;
+    	line-height: 12px;
+    	margin-bottom: 32px;
+
+    }
+    .bangzhu5{
+    	font-size: 11px;
+    	color: #757575;
+    	line-height: 11px;
+    	margin-bottom: 17px;
+
+    }
+    #bangzhu6{
+    	width: 240px;
+    	height: 114px;
+    	float: left;
+    	/*background-color: blue;*/
+    	margin-top: 38px;
+
+    }
+    #bangzhu7{
+    	width: 137px;
+    	height: 117px;
+    	/*background-color: orange;*/
+    	margin-left: 45px;
+    }
+    #dianhua{
+    	font-size: 19px;
+    	color: #ff6700;
+    	line-height:19px;
+    	text-align: center;
+    }
+    #gongzuoshijian{
+    	font-size: 11px;
+    	color: #333333;
+    	text-align: center;
+    	margin-top: 5px;
+
+    }
+    #huafei{
+    	font-size: 11px;
+    	color: #333333;
+    	text-align: center;
+    	margin-top: 5px;
+    }
+    #kefu{
+    	font-size: 10px;
+    	width: 120px;
+    	height: 26px;
+    	color: #ff6700;
+    	border:1px solid #ff6700;
+    	line-height:26px;
+    	text-align: center;
+    	margin-top: 20px;
+    }
+    #foot{
+    	width: 1243px;
+    	height: 36px;
+    	margin-left: 20px;
+    }
+    #foot1{
+    	float: left;
+    	width: 36px;
+    	height: 36px;
+    }
+    #foot2{
+    	width: 900px;
+    	height: 39px;
+    	float: left;
+    }
+    #foot3{
+    	width: 850px;
+    	height: 13px;
+    	margin-left: 11px;
+    }
+    .foot4{
+    	font-size: 11px;
+    	color: #757575;
+    	line-height: 11px;
+    	height: 11px;
+    	width: 40px;
+    	border-right: 1px solid #b0b0b0;
+    	float: left;
+    }
+    .foot5{
+    	font-size: 11px;
+    	color: #757575;
+    	line-height: 11px;
+    	height: 11px;
+    	width: 60px;
+    	border-right: 1px solid #b0b0b0;
+    	float: left;
+    }
+    .foot6{
+    	font-size: 11px;
+    	color: #757575;
+    	line-height: 11px;
+    	height: 11px;
+    	width: 72px;
+    	border-right: 1px solid #b0b0b0;
+    	float: left;
+    }
+    .foot7{
+    	font-size: 11px;
+    	color: #757575;
+    	line-height: 11px;
+    	height: 11px;
+    	width: 85px;
+    	border-right: 1px solid #b0b0b0;
+    	float: left;
+    }
+    .foot8{
+    	font-size: 11px;
+    	color: #757575;
+    	line-height: 11px;
+    	height: 11px;
+    	width: 85px;
+    	float: left;
+    }
+    #foot9{
+    	font-size: 11px;
+    	color: #757575;
+    	line-height: 11px;
+    	height: 11px;
+    	margin-left: 11px;
+    }
+    #footr{
+    	width: 290px;
+    	height: 36px;
+    	float: right;
+
+    }
+	</style>
+</head>
+<body>
+	<div id="header">
+	<div id="lheader">
+	               <a href="" class="headertxt">小米网</a>
+			       <a href="" class="headertxt">MIUI</a>
+			       <a href="" class="headertxt">米聊</a>
+			       <a href="" class="headertxt">游戏</a>
+			       <a href="" class="headertxt">多看阅读</a>
+			       <a href="" class="headertxt">云服务</a>
+			       <div id="er">
+			       <a href="" class="headertxt1">小米网移动版</a>
+			       <div id="erweima">
+			       <div id="erweima2"><img src="../img/sanjiao.png" alt=""></div>
+			       <div id="erweima3"><img src="../img/erweima.png" alt=""></div>
+			       <p id="app">小米商城APP</p>
+			       </div>
+			       			       
+			       </div>
+			       <a href="" class="headertxt">问题反馈</a>
+			       <a href="" class="headertxt1">SelectRegion</a>
+	</div>		
+			
+	<div id="headerright">
+	        <div id="denglu">
+			<a  href="#" class="lu">登陆</a>
+			<a  href="#" class="lu">注册</a>
+			</div>
+	</div>
+		<div id="xiaoguo">
+		     <a href="" id="gouwuche">
+		     <img src="../img/gouwuche.png" alt=""></a>
+			 <div id="xiaoguo1"><span id="jixuxuangou">购物车里没有商品继续选购吧</span></div>
+			 	
+		</div>			
+					
+	</div>
+	<div id="search">
+		<div id="chatu"><img src="../img/ml.png" alt=""></div>
+		<div id="daohang">
+			<div id="daohang2">
+				<a href="" class="txt1">小米手机</a>
+				<a href="" class="txt2">红米</a>
+				<a href="" class="txt2">平板</a>
+				<a href="" class="txt4">电视.盒子</a>
+				<a href="" class="txt3">路由器</a>
+				<a href="" class="txt1">智能硬件</a>
+				<a href="" class="txt2">服务</a>
+				<a href="" class="txt5">社区</a>
+			</div>
+		</div >
+		<div id="sousuokuang">
+		<div id="waiiankuang">
+		<input type="text" id="input1">
+		<a href="" id="shouhuan1">手环</a>
+		<a href="" id="shouhuan2">小米手机4</a>
+		</div>
+		<div>
+		<input type="text" id="input2">
+		<a href="" id="sousuotu"><img src="../img/search.png" alt=""></a>
+		</div>
+		</div>			
+	</div>
+	<div id="sec">
+		<div id="banner">
+		<div id="Lbanner">
+			<div id="maichang">
+				<a href=""  class="shangpinfenlei" id="spfl2">手机&nbsp;平板电话卡<span class="youjiao"><img src="../img/youjiao2.png" alt=""></span></a>
+				 <a href="" class="shangpinfenlei">电视&nbsp;盒子<span class="youjiao"><img src="../img/youjiao2.png" alt=""></span></a>
+				<a href=""  class="shangpinfenlei">路由器&nbsp;智能软件<span class="youjiao"><img src="../img/youjiao2.png" alt=""></span></a>
+				<a href=""  class="shangpinfenlei">移动电源&nbsp;插线板<span class="youjiao"><img src="../img/youjiao2.png" alt=""></span></a>
+				<a href=""  class="shangpinfenlei">耳机&nbsp;音响<span class="youjiao"><img src="../img/youjiao2.png" alt=""></span></a>
+				<a href=""  class="shangpinfenlei">电池&nbsp;存储卡<span class="youjiao"><img src="../img/youjiao2.png" alt=""></span></a>
+				<a href=""  class="shangpinfenlei">保护套&nbsp;后盖<span class="youjiao"><img src="../img/youjiao2.png" alt=""></span></a>
+				<a href=""  class="shangpinfenlei">贴膜&nbsp;其他配件<span class="youjiao"><img src="../img/youjiao2.png" alt=""></span></a>
+				<a href=""  class="shangpinfenlei">米兔&nbsp;服饰<spa class="youjiao"n><img src="../img/youjiao2.png" alt=""></span></a>
+				<a href=""  class="shangpinfenlei" class="splm">箱包&nbsp;其他周边<span class="youjiao"><img src="../img/youjiao2.png" alt=""></span></a>
+			</div>
+		</div>
+		<div id="Rbanner">
+		       <a href="" id="zuo"></a>
+		       <a href="" id="you"></a>
+		       <img src="../img/banner.png" alt="" id="por2">
+		    <div id="yuandian">
+		       <a href="" class="dian"></a>
+		       <a href="" class="dian"></a>
+		       <a href="" class="dian"></a>
+		       <a href="" class="dian"></a>
+		       <a href="" class="dian"></a>
+		       </div>
+		
+		  </div>
+		</div>
+    </div>
+    <div id="sec2">
+       <div id="seckuang">
+     	  <div  class="por4">
+     	  <div id="kuang3">
+     	  <div  class="kuang2">
+     	 <a href=""><img src="../img/dianxin.png" alt="" class="q1"></a>
+     	 <a href=""><img src="../img/dianxin.png" alt="" class="q2"></a>
+     	 <a href=""><img src="../img/dianxin.png" alt="" class="q1"></a>
+     	 </div>
+     	 <div class="kuang2">
+     	 <a href=""><img src="../img/dianxin.png" alt="" class="q3"></a>
+     	 <a href=""><img src="../img/dianxin.png" alt="" class="q2"></a>
+     	 <a href=""><img src="../img/dianxin.png" alt="" class="q3"></a>
+     	 </div>
+     	 
+     	  </div>
+     	  
+     	  </div>
+    	  <div  class="por5"><a href=""><img src="../img/erji.png" alt=""></a></div>
+    	  <div  class="por5"><a href=""><img src="../img/note.png" alt=""></a></div>
+    	  <div  class="por6"><a href=""><img src="../img/jingshuiqi.png" alt=""></a></div>
+    	  </div>
+       </div>   	
+    </div>
+    <div id="mingxingdanpin">
+    	<div id="mingxing"><div id="xiaomi">小米明星单品</div>
+    	<div id="baizuoyou">
+    		<a href=""></a>
+    		<a href=""></a>
+    	</div >
+    	
+    	</div>
+    	<div id="xiaomi2">
+    	<div class="danpin">
+    	     <a href="">
+    	    <img src="../img/diannao.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	</div>
+    	<div class="danpin">
+    		 <a href="">
+    	    <img src="../img/diannao.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	</div>
+    	<div class="danpin">
+    		 <a href="">
+    	    <img src="../img/diannao.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	</div>
+    	<div class="danpin">
+    		 <a href="">
+    	    <img src="../img/diannao.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	</div>
+    	<div class="danpin1">
+    		 <a href="">
+    	    <img src="../img/diannao.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	</div>
+    	</div>
+    </div>
+  <div id="seczhineng">
+     <div id="zn1">
+    	<div id="zn">智能手环</div>
+     	<div id="ck">查看全部 <a href=""><img src="../img/yuan.png" alt=""></a></div>
+     </div>
+        <div  id="zhinengsec">
+        	<div id="znsecl"><img src="../img/wandai.png" alt=""></div>
+		        	<div id="cheng">
+		        	<div  class="cheng1">
+		        		<a href="">
+		        		<img src="../img/diannao.png" alt="">
+		    	        <p id="jinghuaqi">小米净化器</p>
+		    	        <p id="xingneng">双风机净化能力高达406m/h</p>
+		    	        <p id="jiaqian">899元</p></a>
+		    	        <div id="xiahuaxiaoguo"> 很满意 非常喜欢 开心</div>
+		    	        </div>
+
+		    	        <div  class="cheng1">
+		        		<a href="">
+		        		<img src="../img/diannao.png" alt="">
+		    	        <p id="jinghuaqi">小米净化器</p>
+		    	        <p id="xingneng">双风机净化能力高达406m/h</p>
+		    	        <p id="jiaqian">899元</p></a>
+		    	        <div id="xiahuaxiaoguo"> 很满意 非常喜欢 开心</div>
+		    	        </div>
+
+		    	        <div  class="cheng1">
+		        		<a href="">
+		        		<img src="../img/diannao.png" alt="">
+		    	        <p id="jinghuaqi">小米净化器</p>
+		    	        <p id="xingneng">双风机净化能力高达406m/h</p>
+		    	        <p id="jiaqian">899元</p></a>
+		    	        <div id="xiahuaxiaoguo"> 很满意 非常喜欢 开心</div>
+		    	        </div>
+
+		    	        <div  class="cheng1">
+		        		<a href="">
+		        		<img src="../img/diannao.png" alt="">
+		    	        <p id="jinghuaqi">小米净化器</p>
+		    	        <p id="xingneng">双风机净化能力高达406m/h</p>
+		    	        <p id="jiaqian">899元</p></a>
+		    	        <div id="xiahuaxiaoguo"> 很满意 非常喜欢 开心</div>
+		    	        </div>
+
+		    	        </div>
+
+		    	        <div id="cheng">
+		        	<div  class="cheng1">
+		        		<a href="">
+		        		<img src="../img/diannao.png" alt="">
+		    	        <p id="jinghuaqi">小米净化器</p>
+		    	        <p id="xingneng">双风机净化能力高达406m/h</p>
+		    	        <p id="jiaqian">899元</p></a>
+		    	        <div id="xiahuaxiaoguo"> 很满意 非常喜欢 开心</div>
+		    	        </div>
+
+		    	        <div  class="cheng1">
+		        		<a href="">
+		        		<img src="../img/diannao.png" alt="">
+		    	        <p id="jinghuaqi">小米净化器</p>
+		    	        <p id="xingneng">双风机净化能力高达406m/h</p>
+		    	        <p id="jiaqian">899元</p></a>
+		    	        <div id="xiahuaxiaoguo"> 很满意 非常喜欢 开心</div>
+		    	        </div>
+
+		    	        <div  class="cheng1">
+		        		<a href="">
+		        		<img src="../img/diannao.png" alt="">
+		    	        <p id="jinghuaqi">小米净化器</p>
+		    	        <p id="xingneng">双风机净化能力高达406m/h</p>
+		    	        <p id="jiaqian">899元</p></a>
+		    	        <div id="xiahuaxiaoguo"> 很满意 非常喜欢 开心</div>
+		    	        </div>
+
+		    	        <div  class="cheng1">
+		        		<a href="">
+		        		<img src="../img/diannao.png" alt="">
+		    	        <p id="jinghuaqi">小米净化器</p>
+		    	        <p id="xingneng">双风机净化能力高达406m/h</p>
+		    	        <p id="jiaqian">899元</p></a>
+		    	        <div id="xiahuaxiaoguo"> 很满意 非常喜欢 开心</div>
+		    	        </div>
+
+		    	        </div>		              		        	    	
+        </div>  
+        <div id="dapei">
+        	<div id="da">搭配</div>
+        	<div id="pei">
+        		<a href=""  class="remen">热门</a>
+        		<a href=""  class="remen">耳机音箱</a>
+        		<a href=""  class="remen">电源</a>
+        		<a href=""  class="remen">电池储存卡</a>
+        	</div>
+        </div>
+        
+        <div class="dapeisec">
+        	<div class="secdapei">
+    	     <a href="">
+    	    <img src="../img/chongdianbao.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	    <div class="xiaoguo3">非常喜欢</div>
+    	</div>
+    	
+        	<div class="secdapei">
+    	     <a href="">
+    	    <img src="../img/mlshouji.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	    <div class="xiaoguo3">非常喜欢</div>
+    	 </div>
+    	 <div class="secdapei">
+    	     <a href="">
+    	    <img src="../img/mlshouji.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	    <div class="xiaoguo3">非常喜欢</div>
+    	 </div>
+    	 <div class="secdapei">
+    	     <a href="">
+    	    <img src="../img/mlshouji.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	    <div class="xiaoguo3">非常喜欢</div>
+    	 </div>
+    	 <div class="secdapei1">
+    	     <a href="">
+    	    <img src="../img/mlshouji.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	    <div class="xiaoguo3">非常喜欢</div>
+    	 </div>
+
+           </div>
+           <div class="dapeisec">
+        	<div class="secdapei">
+    	     <a href="">
+    	    <img src="../img/chongdianbao.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	    <div class="xiaoguo3">非常喜欢</div>
+    	</div>
+    	
+        	<div class="secdapei">
+    	     <a href="">
+    	    <img src="../img/mlshouji.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	    <div class="xiaoguo3">非常喜欢</div>
+    	 </div>
+    	 <div class="secdapei">
+    	     <a href="">
+    	    <img src="../img/mlshouji.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	    <div class="xiaoguo3">非常喜欢</div>
+    	 </div>
+    	 <div class="secdapei">
+    	     <a href="">
+    	    <img src="../img/mlshouji.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	    <div class="xiaoguo3">非常喜欢</div>
+    	 </div>
+    	 <div class="secdapei1">
+    	     <a href="">
+    	    <img src="../img/mlshouji.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	    <div class="xiaoguo3">非常喜欢</div>
+    	 </div>
+
+           </div>
+
+
+
+
+
+
+           <div id="dapei">
+        	<div id="da">配件</div>
+        	<div id="pei">
+        		<a href=""  class="remen">热门</a>
+        		<a href=""  class="remen">保护套</a>
+        		<a href=""  class="remen">电源</a>
+        		<a href=""  class="remen">其他配件</a>
+        	</div>
+        </div>
+        
+        <div class="dapeisec">
+        	<div class="secdapei">
+    	     <a href="">
+    	    <img src="../img/chaxianban.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	    
+    	</div>
+    	
+        	<div class="secdapei">
+    	     <a href="">
+    	    <img src="../img/mlshouji.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	    <div class="xiaoguo3">非常喜欢</div>
+    	 </div>
+    	 <div class="secdapei">
+    	     <a href="">
+    	    <img src="../img/mlshouji.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	    <div class="xiaoguo3">非常喜欢</div>
+    	 </div>
+    	 <div class="secdapei">
+    	     <a href="">
+    	    <img src="../img/mlshouji.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	    <div class="xiaoguo3">非常喜欢</div>
+    	 </div>
+    	 <div class="secdapei1">
+    	     <a href="">
+    	    <img src="../img/mlshouji.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	    <div class="xiaoguo3">非常喜欢</div>
+    	 </div>
+
+           </div>
+           <div class="dapeisec">
+        	<div class="secdapei">
+    	     <a href="">
+    	    <img src="../img/chaxianban.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	    <div class="xiaoguo3">非常喜欢</div>
+    	</div>
+    	
+        	<div class="secdapei">
+    	     <a href="">
+    	    <img src="../img/mlshouji.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	    
+    	 </div>
+    	 <div class="secdapei">
+    	     <a href="">
+    	    <img src="../img/mlshouji.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	    <div class="xiaoguo3">非常喜欢</div>
+    	 </div>
+    	 <div class="secdapei">
+    	     <a href="">
+    	    <img src="../img/mlshouji.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	    <div class="xiaoguo3">非常喜欢</div>
+    	 </div>
+    	 <div class="secdapei1">
+    	     <a href="">
+    	    <img src="../img/mlshouji.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	    <div class="xiaoguo3">非常喜欢</div>
+    	 </div>
+
+           </div>
+
+
+
+
+
+
+
+           <div id="dapei">
+        	<div id="da">周边</div>
+        	<div id="pei">
+        		<a href=""  class="remen">热门</a>
+        		<a href=""  class="remen">米兔</a>
+        		<a href=""  class="remen">箱包</a>
+        		<a href=""  class="remen">生活周边</a>
+        	</div>
+        </div>
+        
+        <div class="dapeisec">
+        	<div class="secdapei">
+    	     <a href="">
+    	    <img src="../img/weiyi.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	    
+    	</div>
+    	
+        	<div class="secdapei">
+    	     <a href="">
+    	    <img src="../img/mlshouji.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	    <div class="xiaoguo3">非常喜欢</div>
+    	 </div>
+    	 <div class="secdapei">
+    	     <a href="">
+    	    <img src="../img/mlshouji.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	    <div class="xiaoguo3">非常喜欢</div>
+    	 </div>
+    	 <div class="secdapei">
+    	     <a href="">
+    	    <img src="../img/mlshouji.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	    <div class="xiaoguo3">非常喜欢</div>
+    	 </div>
+    	 <div class="secdapei1">
+    	     <a href="">
+    	    <img src="../img/mlshouji.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	    <div class="xiaoguo3">非常喜欢</div>
+    	 </div>
+
+           </div>
+           <div class="dapeisec">
+        	<div class="secdapei">
+    	     <a href="">
+    	    <img src="../img/weiyi.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	    <div class="xiaoguo3">非常喜欢</div>
+    	</div>
+    	
+        	<div class="secdapei">
+    	     <a href="">
+    	    <img src="../img/mlshouji.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	    
+    	 </div>
+    	 <div class="secdapei">
+    	     <a href="">
+    	    <img src="../img/mlshouji.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	    <div class="xiaoguo3">非常喜欢</div>
+    	 </div>
+    	 <div class="secdapei">
+    	     <a href="">
+    	    <img src="../img/mlshouji.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	    <div class="xiaoguo3">非常喜欢</div>
+    	 </div>
+    	 <div class="secdapei1">
+    	     <a href="">
+    	    <img src="../img/mlshouji.png" alt=""></a>
+    	    <p id="jinghuaqi">小米净化器</p>
+    	    <p id="xingneng">双风机净化能力高达406m/h</p>
+    	    <p id="jiaqian">899元</p>
+    	    <div class="xiaoguo3">非常喜欢</div>
+    	 </div>
+       </div>
+       <div id="tuijian">
+       	<div id="wn">
+       		<div id="weini">为你推荐</div>
+       	     <div id="tuiyou">
+       		<a href=""><img src="../img/tuizuo.png" alt=""></a>
+       		<a href=""><img src="../img/tuiyou.png" alt=""></a>       	
+       	 	</div>
+       	</div>
+       		<div id="yidong">
+       		<div  class="jian">
+		        		<a href="">
+		        		<p class="shouhuan"><img src="../img/shouhuan.png" alt="" ></p>
+		    	        <p class="pinming">小米净化器</p>
+		    	        <p class="jiazhi">899元</p></a>
+		    	        <p class="xiaoliang">4267人好评</p>
+		    	        
+		    </div>
+		    <div  class="jian">
+		        		<a href="">
+		        		<p class="shouhuan"><img src="../img/shouhuan.png" alt="" ></p>
+		    	        <p class="pinming">小米净化器</p>
+		    	        <p class="jiazhi">899元</p></a>
+		    	        <p class="xiaoliang">4267人好评</p>
+		    	        
+		    </div>
+		    <div  class="jian">
+		        		<a href="">
+		        		<p class="shouhuan"><img src="../img/shouhuan.png" alt="" ></p>
+		    	        <p class="pinming">小米净化器</p>
+		    	        <p class="jiazhi">899元</p></a>
+		    	        <p class="xiaoliang">4267人好评</p>
+		    	        
+		    </div>
+		    <div  class="jian">
+		        		<a href="">
+		        		<p class="shouhuan"><img src="../img/shouhuan.png" alt="" ></p>
+		    	        <p class="pinming">小米净化器</p>
+		    	        <p class="jiazhi">899元</p></a>
+		    	        <p class="xiaoliang">4267人好评</p>
+		    	        
+		    </div>
+		    <div  class="jian">
+		        		<a href="">
+		        		<p class="shouhuan"><img src="../img/shouhuan.png" alt="" ></p>
+		    	        <p class="pinming">小米净化器</p>
+		    	        <p class="jiazhi">899元</p></a>
+		    	        <p class="xiaoliang">4267人好评</p>
+		    	        
+		    </div>
+
+       	</div>
+       </div>
+      <div id="reping">
+      	<div id="rp ">
+       		<div id="remen">热评产品</div>
+       	</div>
+       	<div class="yinxiang">
+       		<div class="yx"> 
+       		<p class="mlyx"><a href=""><img src="../img/yinxiang.png" alt=""></a></p>
+       		 <div class="yx1">这小钢炮给我感觉太震撼了 完全超出了我的意料之外</div>
+       		 <p class="yxpj">来自于dp588的评价</p>
+       		 <p  class="yxjj"><a href="" class="yxmc">小钢炮蓝牙音箱</a><span class="yxjq">99元</span></p>
+       		</div>
+       		<div class="yx"> 
+       		<p class="mlyx"><a href=""><img src="../img/yinxiang.png" alt=""></a></p>
+       		 <div class="yx1">这小钢炮给我感觉太震撼了 完全超出了我的意料之外</div>
+       		 <p class="yxpj">来自于dp588的评价</p>
+       		 <p  class="yxjj"><a href="" class="yxmc">小钢炮蓝牙音箱</a><span class="yxjq">99元</span></p>
+       		</div>
+       		<div class="yx"> 
+       		<p class="mlyx"><a href=""><img src="../img/yinxiang.png" alt=""></a></p>
+       		 <div class="yx1">这小钢炮给我感觉太震撼了 完全超出了我的意料之外</div>
+       		 <p class="yxpj">来自于dp588的评价</p>
+       		 <p  class="yxjj"><a href="" class="yxmc">小钢炮蓝牙音箱</a><span class="yxjq">99元</span></p>
+       		</div>
+       		<div class="yx"> 
+       		<p class="mlyx"><a href=""><img src="../img/yinxiang.png" alt=""></a></p>
+       		 <div class="yx1">这小钢炮给我感觉太震撼了 完全超出了我的意料之外</div>
+       		 <p class="yxpj">来自于dp588的评价</p>
+       		 <p  class="yxjj"><a href="" class="yxmc">小钢炮蓝牙音箱</a><span class="yxjq">99元</span></p>
+       		</div>
+       		</div>
+       	</div>
+      
+
+
+
+
+
+
+      <div id="reping">
+      	<div id="rp ">
+       		<div id="remen">内容</div>
+       	</div>
+       	<div class="neirongkuang">
+       		<div class="neirong"> 
+       		<p id="tushu">图书</p>
+       		<a href="" class="shuming">古董局中局4（大结局）</a>
+       		<a href="" class="shangxian">先于纸书抢先发布揭开全部悬念马伯庸《古董局中局》系列大结</a>
+       		<a href="" class="money">12元</a>
+       		<a href="" class="caochatu"><img src="../img/xiaocao.png" alt=""></a>
+       		<div class="tsdian">  
+       		<a href=""  class="tushudian"></a>
+       		<a href=""  class="tushudian"></a>
+       		<a href=""  class="tushudian"></a>
+       		<a href=""  class="tushudian"></a>
+       		</div>
+       		</div>
+       		<div class="neirong"> 
+       		<p id="tushu">图书</p>
+       		<a href="" class="shuming">古董局中局4（大结局）</a>
+       		<a href="" class="shangxian">先于纸书抢先发布揭开全部悬念马伯庸《古董局中局》系列大结</a>
+       		<a href="" class="money">12元</a>
+       		<a href="" class="caochatu"><img src="../img/xiaocao.png" alt=""></a>
+       		<div class="tsdian">  
+       		<a href=""  class="tushudian"></a>
+       		<a href=""  class="tushudian"></a>
+       		<a href=""  class="tushudian"></a>
+       		<a href=""  class="tushudian"></a>
+       		</div>
+       		</div>
+       		<div class="neirong"> 
+       		<p id="tushu">图书</p>
+       		<a href="" class="shuming">古董局中局4（大结局）</a>
+       		<a href="" class="shangxian">先于纸书抢先发布揭开全部悬念马伯庸《古董局中局》系列大结</a>
+       		<a href="" class="money">12元</a>
+       		<a href="" class="caochatu"><img src="../img/xiaocao.png" alt=""></a>
+       		<div class="tsdian">  
+       		<a href=""  class="tushudian"></a>
+       		<a href=""  class="tushudian"></a>
+       		<a href=""  class="tushudian"></a>
+       		<a href=""  class="tushudian"></a>
+       		</div>
+       		</div>
+       		<div class="neirong"> 
+       		<p id="tushu">图书</p>
+       		<a href="" class="shuming">古董局中局4（大结局）</a>
+       		<a href="" class="shangxian">先于纸书抢先发布揭开全部悬念马伯庸《古董局中局》系列大结</a>
+       		<a href="" class="money">12元</a>
+       		<a href="" class="caochatu"><img src="../img/xiaocao.png" alt=""></a>
+       		<div class="tsdian">  
+       		<a href=""  class="tushudian"></a>
+       		<a href=""  class="tushudian"></a>
+       		<a href=""  class="tushudian"></a>
+       		<a href=""  class="tushudian"></a>
+       		</div>
+       		</div>
+       		</div>
+       	</div>
+       	<div id="shipin">
+       		<div id="shi ">
+       		<div id="pin">视频</div>
+       	</div>
+       	<div class="shipinkuang">
+       	<div class="ship">
+       		<p class="sp"><a href=""><img src="../img/shipin.png" alt=""></a></p>
+       		<p class="fabuhui">2019发布会kdfhishshfu</p>
+       		<p class="shenqinggaobai">深情告白</p>
+       	</div>
+       	<div class="ship">
+       		<p class="sp"><a href=""><img src="../img/shipin.png" alt=""></a></p>
+       		<p class="fabuhui">2019发布会kdfhishshfu</p>
+       		<p class="shenqinggaobai">深情告白</p>
+       	</div>
+       	<div class="ship">
+       		<p class="sp"><a href=""><img src="../img/shipin.png" alt=""></a></p>
+       		<p class="fabuhui">2019发布会kdfhishshfu</p>
+       		<p class="shenqinggaobai">深情告白</p>
+       	</div>
+       	<div class="ship">
+       		<p class="sp"><a href=""><img src="../img/shipin.png" alt=""></a></p>
+       		<p class="fabuhui">2019发布会kdfhishshfu</p>
+       		<p class="shenqinggaobai">深情告白</p>
+       	</div>
+       		
+       	</div>
+       	</div>
+       	<div id="weixiu">
+       		<div id="weixiu2">
+       			<div class="weixiu3"><a href=""><img src="../img/weixiu.png" alt=""></a></div>
+       			<div class="weixiu3"><a href=""><img src="../img/weixiu.png" alt=""></a></div>
+       			<div class="weixiu3"><a href=""><img src="../img/weixiu.png" alt=""></a></div>
+       			<div class="weixiu3"><a href=""><img src="../img/weixiu.png" alt=""></a></div>
+       			<div class="weixiu3"><a href=""><img src="../img/baoyou1.png" alt=""></a></div>
+       		</div>
+       	</div>
+       	<div id="bangzhu">
+       		<div id="bangzhu1">
+       			<div id="bangzhu2">
+       				<div  class="bangzhu3">
+       					<a href="" class="bangzhu4">关于小米</a>
+                        <a href="" class="bangzhu5">了解小米</a>
+                        <a href="" class="bangzhu5">加入小米</a>
+                        <a href="" class="bangzhu5">联系我们</a>
+       				</div>
+
+       				<div  class="bangzhu3">
+       					<a href="" class="bangzhu4">关于小米</a>
+                        <a href="" class="bangzhu5">了解小米</a>
+                        <a href="" class="bangzhu5">加入小米</a>
+                        <a href="" class="bangzhu5">联系我们</a>
+       				</div>
+       				<div  class="bangzhu3">
+       					<a href="" class="bangzhu4">关于小米</a>
+                        <a href="" class="bangzhu5">了解小米</a>
+                        <a href="" class="bangzhu5">加入小米</a>
+                        <a href="" class="bangzhu5">联系我们</a>
+       				</div>
+       				<div  class="bangzhu3">
+       					<a href="" class="bangzhu4">关于小米</a>
+                        <a href="" class="bangzhu5">了解小米</a>
+                        <a href="" class="bangzhu5">加入小米</a>
+                        <a href="" class="bangzhu5">联系我们</a>
+       				</div>
+       				<div  class="bangzhu3">
+       					<a href="" class="bangzhu4">关于小米</a>
+                        <a href="" class="bangzhu5">了解小米</a>
+                        <a href="" class="bangzhu5">加入小米</a>
+                        <a href="" class="bangzhu5">联系我们</a>
+       				</div>
+       				
+       			</div>
+       			<div id="bangzhu6">
+       				<div id="bangzhu7">
+       					<p id="dianhua">400-100-5678</p>
+       					<p id="gongzuoshijian">周一至周日8:00-18:00</p>
+       					<p id="huafei">仅收市花费</p>
+       					<p id="kefu">24小时在线客服</p>
+       				</div>
+       			</div>
+       		</div> </div>
+       		<div id="foot">
+       			<div id="foot1"><img src="../img/xiaomi2.png" alt=""></div>
+       			<div id="foot2">
+       				<div id="foot3">
+       					<div class="foot4">小米网</div>
+       					<div class="foot4">MIUI</div>
+       					<div class="foot4">米聊</div>
+       					<div class="foot5">多看书城</div>
+       					<div class="foot6">小米路由器</div>
+       					<div class="foot5">小米后院</div>
+       					<div class="foot6">小米天猫店</div>
+       					<div class="foot7">小米淘宝直营店</div>
+       					<div class="foot5">小米网盟</div>
+       					<div class="foot5">问题反馈</div>
+       					<div class="foot8">Select Region</div>
+       				</div>
+       				<div id="foot9">&copy;mi.com 京ICP证110507号 京ICP备10046444号 京公网安备11010802020134号 京网文[2017]1530-131号 </div>
+       			</div>
+       			<div></div>
+       			<div id="footr">
+       				<a href=""><img src="../img/chengxin.png" alt=""></a>
+       				<a href=""><img src="../img/kexin.png" alt=""></a>
+       				<a href=""><img src="../img/baozhang.png" alt=""></a>
+       			</div>
+       		</div>
+
+ </div>
+    
+</body>
+</html>

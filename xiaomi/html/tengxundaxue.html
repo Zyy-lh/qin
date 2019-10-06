@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="reset.css">
+	<style>
+        #header{
+        	width: 1432px;
+        	height: 79px;
+        	margin: 0 auto;
+        	/*background-color:yellow;*/
+        	
+        }
+        #header1{
+            width: 1067px;
+            height: 79px;
+            /*background-color: red;*/
+            margin: 0 auto;
+           /* position: fixed;*/
+        }
+        #logo{
+        	width: 310px;
+        	height: 47px;
+        	float: left;
+        	padding-top: 17px;
+        	margin-right: 107px;
+        }
+        #tu{
+            width: 310px;
+            height: 47px;
+            float: right;
+        }
+        #tcenter{
+        	width: 443px;
+        	height: 61px;
+        	/*background-color: hotpink;*/
+        	float: left;
+        	margin-top: 17px;
+        }
+        #txt1{
+        	width: 100px;
+        	height: 29px;
+        	color: #857c6d;
+        	font-size: 13px;
+        	line-height: 13px;
+        	float: left;
+        	padding-top: 32px;
+        	margin-right: 10px;
+        }
+        #txt1:hover{
+        	background-color: yellow;
+        	color: red;
+        }
+        #right{
+        	width: 142px;
+        	height: 50px;
+        	float: right;
+        	/*background-color: pink;*/
+        	margin-top: 17px;
+        	position: relative;
+        }
+        #rigt{
+        	width: 139px;
+        	height: 12px;
+        	margin-bottom: 9px;
+        	text-align: right;
+        }
+        .zhuce{
+        	font-size: 11px;
+        	line-height: 11px;
+        	color: #a1978d
+
+        }
+        #txt2{
+        	width: 139px;
+        	height: 22px;
+        	
+        }
+        #tu2{
+        	position:absolute;
+        	right: 8px;
+        	top: 25px;
+        }
+        #pro{
+        	width: 1438px;
+        	height: 356px;
+        	margin: 0 auto;
+        	/*background-color: red;*/
+        }
+        #guanggao{
+        	height: 37px;        	
+        /*background-color: red;*/        }
+        #gao{
+        	width: 1067px;
+        	height: 37px;
+         /* background-color: yellow;*/
+        	margin:0 auto;
+        }
+        #sec{
+        	width:1432px;
+        	height: 1094px;
+        	background-color: #d6dae3;
+        	margin: 0 auto;
+        }
+        #sec1{
+        	width: 1067px;
+        	margin: 0 auto;
+        }
+        #leftsec{
+        	width:783px;
+        	float: left;
+        	margin-right: 22px; 
+        	padding-top: 20px;
+        	/*background-color: yellow;*/
+        }
+        #text1{
+        	width: 783px;
+        	height: 357px;
+        	margin-bottom: 19px;
+        }
+        #redian{
+        	width: 783px;
+        	height: 60px;
+        	/*background-color:#f2f1ef;*/
+        	background: url(../img/re.png) no-repeat 22px 19px #f2f1ef;
+        	
+        }
+        #rezi{
+               height: 19px;
+               color: #000100;
+        	   font-size: 19px;
+        	   line-height: 19px;
+        	   padding-top: 19px;
+        	   padding-left: 49px;
+        	   float: left;
+        }
+        .more{
+        	margin-top:32px;
+        	margin-right: 20px;
+        	font-size: 8px;
+        	line-height: 8px;
+        	color: #888888;
+        	float: right;
+
+        }
+        #text2{
+        	width: 783px;
+        	height: 294px;
+        	background-color: #f2f1ef;
+        	
+        }
+        #ma1{
+        	width: 227px;
+        	height: 272px;
+        	margin-left:23px;
+        	float: left; 
+        	margin-right: 31px;
+        	background-color: #fff;
+        }
+        #hua{
+        	font-size: 14px;
+        	line-height: 13px;
+        	color: #000;
+        	margin-top: 16px;
+        	margin-bottom: 12px;
+        	margin-left: 10px;
+        }
+        #yue{
+        	color: #898989;
+        	font-size: 14px;
+        	line-height: 21px;
+        	margin-left: 10px;
+        	margin-right: 16px;
+        }
+        #ma2{
+        	width: 227px;
+        	height: 272px;
+        	float: left; 
+        	background-color: #fff;
+        }
+        #cxo{
+        	font-size: 14px;
+        	line-height: 13px;
+        	color: #000;
+        	margin-top: 16px;
+        	margin-bottom: 12px;
+        	margin-left: 10px;
+        }
+        #we{
+        	color: #898989;
+        	font-size: 14px;
+        	line-height: 21px;
+        	margin-left: 11px;
+        	margin-right: 20px;
+
+        }
+         #ma3{
+            width: 227px;
+        	height: 272px;
+        	float: left;
+        	margin-left: 31px;
+        	background-color: #fff;
+         }
+         #fei{
+         	font-size: 14px;
+        	line-height: 13px;
+        	color: #000;
+        	margin-top: 16px;
+        	margin-bottom: 12px;
+        	margin-left: 10px;
+         }
+         #ru{
+         	color: #898989;
+        	font-size: 14px;
+        	line-height: 21px;
+        	margin-left: 11px;
+        	margin-right: 20px;
+
+         }
+         #text3{
+         	width: 783px;
+         	height: 205px;
+         	background-color: #f2f1ef;
+         	margin-bottom: 13px;
+         }
+         #ganhuo{
+         	width: 783px;
+         	height: 56px;
+         	background: url(../img/ben.png) no-repeat 20px 20px;
+         }
+         #huo{
+         	height: 19px;
+            color: #000100;
+        	font-size: 19px;
+        	line-height: 19px;
+        	padding-top: 19px;
+        	padding-left: 49px;
+        	float: left;
+         }
+         #gan{
+         	width: 744px;
+         	height: 127px;
+         	margin-left: 23px;
+         	background-color: #fff;
+         }
+         #ganzuo{
+         	width: 85px;
+         	height: 86px;
+         	float: left;
+         	margin-top: 21px;
+         	margin-left: 18px;
+         }
+         #ganyou{
+         	width: 610px;
+         	height: 86px;
+         	float: right;
+         	margin-left: 21px;
+         	margin-top: 22px;
+         	background: url(../img/biao.png) no-repeat 0px 28px;
+         }
+         #ke{
+         	font-size: 16px;
+         	line-height: 16px;
+         	color: #010101;
+         	margin-bottom: 10px;
+         }
+         #riqi{
+         	font-size: 9px;
+         	color: #888888;
+         	margin-bottom: 13px;
+         	margin-left: 17px;
+         }
+         #ben{
+         	font-size: 13px;
+         	line-height: 13px;
+         	color: #000;
+         }
+         #text4{
+         	width: 783px;
+         	height: 242px;
+         	background-color: #f2f1ef;
+         }
+         #wangyou{
+         	width: 717px;
+         	height: 181px;
+         	margin-left: 20px;
+         	border-bottom: 1px solid #e4e3e1;
+         }
+         #wang{
+         	width: 783px;
+         	height: 60px;
+         	background: url(../img/xing.png) no-repeat 19px 19px;
+         }
+         #jing{
+         	height: 19px;
+            color: #000100;
+        	font-size: 19px;
+        	line-height: 19px;
+        	padding-top: 20px;
+        	padding-left: 49px;
+        	float: left;
+         }
+         #wangleft{
+         	width: 223px;
+         	height: 160px;
+         	float: left;
+         }
+         #shi{
+         	width: 461px;
+         	height: 160px;
+         	margin-left: 22px;
+         	float: left;
+         	background: url(../img/biao.png) no-repeat 0px 31px;
+         }
+         #shishang{
+         	font-size: 20px;
+         	line-height: 20px;
+         	color: #010000;
+         	margin-bottom: 12px;
+         }
+         #shijian{
+         	margin-left: 17px;
+         	font-size: 10px;
+         	line-height: 10px;
+         	color: #89898b;
+         	margin-bottom: 30px;
+         }
+         #guangmang{
+         	font-size: 13px;
+         	line-height: 23px;
+            color: #020100;
+         }
+         #text5{
+         	width: 783px;
+         	height: 187px;
+         	background-color: #f2f1ef;
+         	padding-top: 20px;
+         }
+         #douniu{
+         	width: 744px;
+         	height: 181px;
+         	margin-left: 20px;
+         	border-bottom: 1px solid #e4e3e1;
+         }
+         #dou{
+         	width: 226px;
+         	height: 160px;
+         	float: left;
+         	margin-right: 23px;
+         }
+         #miao{
+         	width: 461px;
+         	height: 160px;
+         	margin-left: 22px;
+         	float: left;
+         }
+        #miaoxuan{
+        	font-size: 20px;
+         	line-height: 20px;
+         	color: #010000;
+         	margin-bottom: 12px;
+        }
+        #yuefen{
+        	margin-left: 17px;
+         	font-size: 10px;
+         	line-height: 10px;
+         	color: #89898b;
+         	margin-bottom: 30px;
+        }
+        #douniupa{
+        	font-size: 13px;
+         	line-height: 23px;
+            color: #020100;
+        }
+         #risec{
+        	width: 265px;
+        	float: left;
+        	padding-top: 20px;
+        	background-color: #fcfafb;
+        }
+        #paihang{
+        	width: 265px;
+        	height: 71px;
+        	background: url(../img/top.png)no-repeat 20px 20px;
+        }
+     #pai{
+        	margin-left: 49px;
+        	font-size: 21px;
+        	line-height: 21px;
+        	color: #000;
+        	padding-top: 20px;
+        }
+        #zrp{
+        	width: 265px;
+        	height: 38px;
+        	font-size: 13px;
+        	color: #000;
+        }
+        #zrph1{
+        	font-size: 13px;
+        	color: #000;
+        	line-height: 13px;
+        	margin-left: 22px;
+        }
+        #mahuateng{
+        	width: 226px;
+        	height: 160px;
+        	margin-left: 22px;
+        	margin-bottom: 21px;
+        	position: relative;
+        }
+        #img{
+        	width: 100%;
+        	height: 100%;
+        }
+        #sale{
+        	position: absolute;
+        	left: 0px;
+        	bottom: 0px;
+        }
+        #yi{
+        	width: 20px;
+        	height: 26px;
+            background-color: #e3291c;
+            color: #fff;
+            float: left;
+            font-size: 9px;
+            text-align: center;
+            line-height: 26px;
+        }
+        #zhifu{
+        	float: left;
+			width: 206px;
+			height: 26px;
+			color: #fff;
+			font-size: 11px;
+			text-indent: 10px;
+			line-height: 26px;
+			background: rgba(0,0,0,0.3);
+			text-decoration: none;
+        }
+         #mahuateng2{
+        	width: 226px;
+        	height: 160px;
+        	margin-left: 22px;
+        	margin-bottom: 21px;
+        	position: relative;
+        }
+        #img1{
+        	width: 100%;
+        	height: 100%;
+        }
+        #sale1{
+        	position: absolute;
+        	left: 0px;
+        	bottom: 0px;
+        }
+        #yi1{
+        	width: 20px;
+        	height: 26px;
+            background-color: #ec592d;
+            color: #fff;
+            float: left;
+            font-size: 9px;
+            text-align: center;
+            line-height: 26px;
+        }
+        #zhifu1{
+        	float: left;
+			width: 206px;
+			height: 26px;
+			color: #fff;
+			font-size: 11px;
+			text-indent: 10px;
+			line-height: 26px;
+			background: rgba(0,0,0,0.3);
+			text-decoration: none;
+        }
+        #mahuateng3{
+        	width: 226px;
+        	height: 160px;
+        	margin-left: 22px;
+        	margin-bottom: 21px;
+        	position: relative;
+        }
+        #img2{
+        	width: 100%;
+        	height: 100%;
+        }
+        #sale2{
+        	position: absolute;
+        	left: 0px;
+        	bottom: 0px;
+        }
+        #yi2{
+        	width: 20px;
+        	height: 26px;
+            background-color: #f5a544;
+            color: #fff;
+            float: left;
+            font-size: 9px;
+            text-align: center;
+            line-height: 26px;
+        }
+        #zhifu2{
+        	float: left;
+			width: 206px;
+			height: 26px;
+			color: #fff;
+			font-size: 11px;
+			text-indent: 10px;
+			line-height: 26px;
+			background: rgba(0,0,0,0.3);
+			text-decoration: none;
+        }
+        #tengxundaxue{
+        	width: 226px;
+        	height: 176px;
+        	margin-left: 22px;
+        	margin-bottom: 25px;
+        	margin-top: 3px;
+        }
+        #TXDX{
+        	font-size: 17px;
+        	color: #000;
+        	margin-top: 8px;
+        	margin-bottom: 13px;
+        	line-height: 17px;
+        }
+        #wenben{
+        	font-size: 14px;
+        	line-height: 24px;
+        	color: #000;
+        }
+        #lianxi{
+    	width:226px;
+    	height: 171px;
+    	margin-top: 17px;
+        margin-left: 22px;
+    	background: url(../img/dianhua.png) no-repeat;
+        }
+        #lxwm{
+        	margin-left: 29px;
+        	font-size: 19px;
+        	line-height: 19px;
+        	color:#000;
+        	margin-bottom: 11px;
+        }
+        #hezuo{
+        	font-size: 12px;
+        	line-height: 12px;
+        	color: #000;
+        	margin-top: 12px;
+        }
+        #foot{
+        	width: 1432px;
+        	height: 275px;
+        	margin: 0 auto;
+        	border-top: 4px solid #1fbfef;
+        	background-color: #f6f6f6;
+        }
+        #PTKF{
+        	width: 783px;
+        	height: 63px;
+        }
+        #KF{
+        	font-size: 15px;
+        	line-height: 15px;
+        	color: #000;
+        	padding-top: 34px;
+        	padding-left: 19px;
+        }
+        #footleft{
+        	width: 783px;
+        	height: 175px;
+        	float: left;
+        	margin-left: 186px;
+        	margin-right: 22px;
+        }
+        #por1{
+        	width: 750px;
+        	height: 23px;
+        	margin-bottom: 27px;
+        }
+        #por1 .chatu{
+        	width: 74px;
+        	height: 26px;
+        	float: left;
+        	margin-right: 51px;
+        }
+        #por2{
+        	width: 750px;
+        	height: 23px;
+        	margin-bottom: 27px;
+        }
+        #por2 .chatu1{
+        	width: 74px;
+        	height: 26px;
+        	float: left;
+        	margin-right: 51px;
+        }
+        #footright{
+        	width: 265px;
+        	height: 175px;
+        	float: left;
+        }
+        .shouting{
+        	width: 96px;
+        	height: 52px;
+        	margin-top: 35px;
+        	margin-left: 18px;
+        }
+        .ting{
+        	font-size: 11px;
+        	line-height: 11px;
+        	margin-bottom: 15px;
+        	color: #010101;
+        }
+        #kongjian{
+        	height: 24px;
+        }
+        #footbottom{
+        	width: 783px;
+        	height: 178px;
+        	float: left;
+        	margin-left: 186px;
+        	margin-right: 22px;
+        }
+        #kfpT{
+        	width: 783px;
+        	height: 27px;
+        }
+	     #kfpT1{
+		    font-size: 15px;
+        	line-height: 15px;
+        	color: #000;
+        	padding-left: 19px;
+	    }
+	    #hezuo1{
+	    	width: 750px;
+        	height: 26px;
+        	margin-bottom:10px;
+	    }
+	    .hezuo2{
+	    	width: 62px;
+	    	font-size: 14px;
+	    	line-height: 26px;
+	    	color: #3f3f3f;
+	    	float: left;
+	    	margin-right: 30px;
+	    }
+	    .hezuo3{
+	    	width:55px;
+	    	font-size: 14px;
+	    	line-height: 26px;
+	    	color: #3f3f3f;
+	    	float: left;
+	    	margin-right: 26px;
+	    }
+	    .hezuo4{
+	    	width: 98px;
+	    	font-size: 14px;
+	    	line-height: 26px;
+	    	color: #3f3f3f;
+	    	float: left;
+	    	margin-right: 30px;
+	    }
+	    .hezuo5{
+	    	width: 83px;
+	    	font-size: 14px;
+	    	line-height: 26px;
+	    	color: #3f3f3f;
+	    	float: left;
+	    	margin-right: 30px;
+	    }
+	    #hezuo6{
+	    	width: 750px;
+        	height: 26px;
+	    }
+	    .hezuo7{
+	    	width:54px;
+	    	font-size: 13px;
+	    	line-height: 26px;
+	    	color: #3f3f3f;
+	    	float: left;
+	    	margin-right:27px;
+	    }
+	    #hezuo8{
+	    	width:66px;
+	    	font-size: 13px;
+	    	line-height: 26px;
+	    	color: #3f3f3f;
+	    	float: left;
+	    	margin-right: 30px;
+	    }
+	</style>
+</head>
+<body>
+	<div id="header">
+		<div id="header1">
+			<div id="logo">
+				<div id="tu"><img src="../img/logo.png" alt=""></div>
+			</div>
+			<div id="tcenter">
+					<a href="#" id="txt1">微信学院</a>
+					<a href="#" id="txt1">微信学院</a>
+					<a href="#" id="txt1">开放平台学院</a>
+					<a href="#" id="txt1">互联网学院</a>
+			</div>
+			<div id="right">
+			        <p id="rigt"><a href="#" class="zhuce">注册&nbsp;&nbsp;|</a><a href="#" class="zhuce">&nbsp;&nbsp;登陆</a></p>
+			        <p ><form action=""><input type="text" id="txt2">
+			        <img src="../img/sousuo.png" alt="" id="tu2"></form>
+			        </p>
+			</div>
+		</div>
+	</div>	
+	<div id="pro"><img src="../img/header.png" alt=""></div>
+	<div id="guanggao">
+		<div id="gao"><img src="../img/yugao.png" alt=""></div>
+	</div>
+	<div id="sec">
+	  <div id="sec1">
+	  	<div id="leftsec">
+	  		<div id="text1">
+	  			<div id="redian"><div id="rezi">热门课程</div><div class="more">more</div></div>
+	  			<div id="text2">
+	  			<div id="ma1"><a href=""><img src="../img/ma.png" alt=""></a>
+	  				<p id="hua">马化腾：腾讯将专注于做互联...</p>
+	  				<p id="yue">11月9日，世界互联网大会在乌镇举行。腾讯公司董事会主席兼CEO马化腾在... </p>
+	  			</div>
+	  			<div id="ma2"><a href=""><img src="../img/mi.png" alt=""></a>
+	  				<p id="cxo">腾讯cxo David：探索未来...</p>
+	  				<p id="we">腾讯公司举办的“2004 We大会”在北京举行。腾讯公司首席探索管（cxo)...</p>
+	  			</div>
+	  				<div id="ma3">
+	  				<a href=""><img src="../img/fei.png" alt=""></a>
+	  				<p id="fei">飞利浦科特勒经典分析--新媒...</p>
+	  				<p id="ru">如何面对并迎接全球挑战如何建立营销组织如何实现传统营销到数字化营销的转...</p>
+	  				</div>
+	  			</div>
+	  		</div>
+	  		<div id="text3">
+	  			<div id="ganhuo"><div id="huo">干货分享</div><div class="more">more</div></div>
+	  			<div id="gan">
+	  				<div id="ganzuo"><a href="#"><img src="../img/ganhuo.png" alt=""></a></div>
+	  				<div id="ganyou">
+	  					<p id="ke">课时1：Android Crash现状</p>
+	  					<p id="riqi">2014-12-15&nbsp;&nbsp;21:06</p>
+	  					<p id="ben">本课介绍Android应用Crash的现状及危害</p>
+	  				</div>
+	  			</div>
+	  		</div>
+	  		<div id="text4">	  		
+	  		<div id="wang"><div id="jing">精品活动</div><div class="more">more</div></div>
+	  			<div id="wangyou">
+	  				<div id="wangleft"><a href="#"><img src="../img/wangyou.png" alt=""></a></div>
+	  				<div id="shi">
+	  					<p id="shishang">史上最全网游编年史不可诗意的网游时代</p>
+	  					<p id="shijian">2014年12月9日</p>
+	  					<p id="guangmang">12月9日下午两点史上最全网友编年史来袭！腾讯游戏高级品牌经理刘志鹏（光芒）带来250页的PPT干货分享近三小时脱口秀；带您回顾历史，理清思路；解释规律，指引未来</p>
+	  				</div>
+	  			</div>	  			
+	  		</div>
+	  		<div id="text5">
+	  			<div id="douniu">
+	  				<div id="dou"><a href="#"><img src="../img/douniu.png" alt=""></a></div>
+	  				<div id="miao">
+	  					<p id="miaoxuan">秒选族.斗牛趴</p>
+	  					<p id="yuefen">2014年11月17日</p>
+	  					<p id="douniupa">11月17日相约腾讯会，犀利导师和秒选青年见展开的关于“选择”的思想交锋！【秒选族。斗牛趴】一敢选.敢炫。敢争锋。秒选族们，来，斗亿场！选择，我要的现在就要！一起来看看这场在犀利导师和秒选青年间展开的关</p>
+	  				</div>
+	  			</div>	 
+	  			</div>
+	  		</div>
+	  	</div>
+	  	<div id="risec">
+	  		<div id="paihang"><div id="pai">排行榜</div></div>
+	  		<div id="zrp"><div id="zrph1">最热排行</div></div>
+	  		<div id="mahuateng">
+	  			<img src="../img/sale.png" alt="" id="img">
+	  			<div id="sale">
+	  			<span id="yi">1</span>
+	  			<a href="#" id="zhifu">微信支付：告别收银台，告别排...</a>
+	  			</div>	  			
+	  		</div>
+
+	  		<div id="mahuateng2">
+	  			<img src="../img/mahuateng.png" alt="" id="img1">
+	  			<div id="sale1">
+	  			<span id="yi1">2</span>
+	  			<a href="#" id="zhifu1">微信支付：告别收银台，告别排...</a>
+	  			</div>	  			
+	  		</div>
+	  		<div id="mahuateng3">
+	  			<img src="../img/mahuateng1.png" alt="" id="img2">
+	  			<div id="sale2">
+	  			<span id="yi2">3</span>
+	  			<a href="#" id="zhifu2">微信支付：告别收银台，告别排...</a>
+	  			</div>	  			
+	  		</div>
+	  		<div id="tengxundaxue">
+	  		<p id="TXDX">腾讯大学</p>
+	  		<p id="wenben">腾讯大学作为腾讯特色的学习交流平台，服务于腾讯合作伙伴及用户，面向互联网产业链，传播腾讯经验，分享行业知识及优秀实践，助力合作伙伴成长，推动开放共赢的胡亮网生态圈的建设</p>
+	  		</div>
+           <hr>
+           <div id="lianxi">
+           	<p id="lxwm">联系我们</p>
+           	<p id="hezuo">合作：xiaoteng_daxue@qq.com</p>
+           	<p id="hezuo">QQ:2813343187</p>
+           </div>
+	  	</div>
+	  </div>
+	</div>
+	<div id="foot">
+	<div id="foottop">
+			<div id="footleft">
+	<div id="PTKF"><div id="KF"></div>平台开放</div>
+		<div id="por1">
+			<div class="chatu"><a href=""><img src="../img/qzone.png" alt=""></a></div>
+			<div class="chatu"><a href=""><img src="../img/siyecao.png" alt=""></a></div>
+			<div class="chatu"><a href=""><img src="../img/pugongying.png" alt=""></a></div>
+			<div class="chatu"><a href=""><img src="../img/qqyouxi.png" alt=""></a></div>
+			<div class="chatu"><a href=""><img src="../img/caifutong.png" alt=""></a></div>
+			<div class="chatu"><a href=""><img src="../img/moil.png" alt=""></a></div>
+		</div>
+		<div id="por2">
+			<div class="chatu1"><a href=""><img src="../img/li.png" alt=""></a></div>
+			<div class="chatu1"><a href=""><img src="../img/shuju.png" alt=""></a></div>
+			<div class="chatu1"><a href=""><img src="../img/pingtai.png" alt=""></a></div>
+			<div class="chatu1"><a href=""><img src="../img/tong.png" alt=""></a></div>
+			<div class="chatu1"><a href="">更多</a></div>
+		</div>
+		</div>
+		<div id="footright">
+			<div class="shouting">
+			         <p class="ting">收听微博</p>
+			         <p class="kongjian"><a href=""><img src="../img/kaifang.png" alt=""></a></p>
+			 </div>
+			 <div class="shouting">
+			         <p class="ting">关注空间</p>
+			         <p class="kongjian"><a href=""><img src="../img/kaifang2.png" alt=""></a></p>
+			 </div>
+
+	</div>
+		</div>
+		<div id="footbottom">
+			<div id="kfpT"><div id="kfpT1"></div>合作伙伴</div>
+			<div id="hezuo1">
+				<div class="hezuo2">TechWeb</div>
+				<div class="hezuo3">CSDN</div>
+				<div class="hezuo3">36kr</div>
+				<div class="hezuo2">DoNews</div>
+				<div class="hezuo5">APP游戏部落</div>
+				<div class="hezuo3">天极网</div>
+				<div class="hezuo4">凤凰网科技频道</div>
+				<div class="hezuo3">易观网</div>
+			</div>
+			<div id="hezuo6">
+				<div class="hezuo7">优异开发</div>
+				<div class="hezuo7">雷锋网</div>
+				<div class="hezuo7">飞象网</div>
+				<div class="hezuo7">数码港</div>
+				<div class="hezuo7">艾瑞网</div>
+				<div class="hezuo7">落伍者</div>
+				<div class="hezuo7">LAMP人</div>
+				<div id="hezuo8">QQ浏览器</div>
+				<div class="hezuo7">腾讯科技</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
